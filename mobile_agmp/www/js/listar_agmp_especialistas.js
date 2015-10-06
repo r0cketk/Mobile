@@ -17,8 +17,7 @@ var options = {
 
 function getblogList() {
 	var id = getUrlVars()["id"];
-	function success(pos) {
-		$.getJSON(serviceURL + 'listar_agmp_convenios.php?id='+id+'&location='+pos.coords.latitude+','+pos.coords.longitude, function(data) {
+		$.getJSON(serviceURL + 'listar_agmp_convenios.php?id='+id, function(data) {
 			$('#blogList li').remove();
 			blog = data.items;
 			$.each(blog, function(index, blog) {
@@ -35,14 +34,8 @@ function getblogList() {
 			$('#blogList').listview('refresh');
 	
 	});
-	}
-function error(err) {
-  console.warn('ERROR(' + err.code + '): ' + err.message);
-};
-navigator.geolocation.getCurrentPosition(success, error, options);
+	
 }
-
-
 
 function getUrlVars() {
     var vars = [], hash;
