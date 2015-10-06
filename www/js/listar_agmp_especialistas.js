@@ -23,7 +23,7 @@ function getblogList() {
 			$.each(blog, function(index, blog) {
 				$('#blogList').append('<li class="ui-corner-all" style="margin: 10px 20px">' +
 						'<a href="tel:' + blog.tel + '" data-role="button" data-icon="tel" class="phone_icon"></a>' +
-						'<img src="http://www.agmp.org.br/upload/' + blog.logo + '" class="logo_lado"><h4>' + blog.nome + '</h4>' +
+						'<img src="http://www.agmp.org.br/upload/' + blog.logo + '" class="logo_lado"><br style="clear: both"><h4>' + blog.nome + '</h4>' +
 						'<p><strong>Telefone</strong>: ' + blog.tel + '</p>' +
 						'<p><strong>Endereço</strong>: ' + blog.endereco + '<br>' + blog.objeto + '</p>' +
 						'<a href="https://www.google.com.br/maps/search/' + blog.nome + '" class="phone_endereco" target="_blank"></a>' +
