@@ -7,7 +7,7 @@
     <author href="http://www.nateia.com" email="anderson@nateia.com">
         Nateia Digital - www.nateia.com
     </author>
-    <content src="index.html" />
+    <content src="www/index.html" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
